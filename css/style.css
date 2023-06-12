@@ -1,6 +1,126 @@
+* {
+   margin: 0;
+   padding: 0;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   box-sizing: border-box;
+}
+
+main {
+   display: flex;
+   justify-content: center;
+   width: 100%;
+   font-size: 50px;
+   font-weight: 600;
+   color: rgb(30, 7, 123);
+   border: 5mm ridge #050505;
+   padding:  25px 25px 25px 25px;
+   background: linear-gradient(180deg, #e5ff00, #333);
+  
+}
+
 body {
    background-size: cover;
    height: 100%;
    width: 100%;
    background-repeat: no-repeat;
+}
+#searchbar {
+   border: 0;
+   outline: 0;
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   padding-top: 25px;
+   border-radius: 10px;
+}
+#serchbar:hover {
+   cursor: crosshair;
+}
+#serch:hover {
+   cursor: crosshair;
+}
+#search {
+   width: 150px;
+   height: 30px;
+   background: #5543c6;
+   border-radius: 30px;
+   cursor: pointer;
+}
+.currentweather {
+   width: 150px;
+   height: auto;
+}
+.weatherIcon{
+   width: 150px;
+   height: auto;
+}
+.cold{
+   font-weight: 600;
+   font-family: 'Courier New', Courier, monospace;
+   color: #1b05af;
+   font-size: larger;
+   border-radius: 30px;
+   margin-right: 10px;
+   cursor: pointer;
+}
+#cityInput {
+   width: 150px;
+}
+.box {
+   display: flex;
+   flex-direction: column;
+   background: linear-gradient(135deg, #c3b6fb, #2200fc);
+   padding: 30px;
+   border-radius: 30px;
+   width: 90%;
+   max-width: 600px;
+   margin: 50px 10px 20px 10px;
+}
+
+
+ul {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+   margin: 20px 20px 20px 20px;
+   padding: 20px 20px 20px 20px;
+   list-style-type: none;
+   
+   .target:nth-child(0){
+      display: flex;
+      justify-self: flex-start;
+      align-self: start;
+   }
+}
+
+.CityName {
+   display: flex;
+   flex-direction: row;
+   padding: auto;
+   font-weight: 500;
+}
+.lineItem1 {
+   display: flex;
+   flex-direction: row;
+   padding: auto;
+}
+.lineItem2 {
+   display: flex;
+   flex-direction: row;
+   padding: auto;
+}
+.lineItem3 {
+   display: flex;
+   flex-direction: row;
+   padding: auto;
+}
+.lineItem4 {
+   display: flex;
+   flex-direction: row;
+   padding: auto;
+}
+.lineItem5 {
+   display: flex;
+   flex-direction: row;
+   padding: auto;
 }
